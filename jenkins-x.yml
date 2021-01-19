@@ -27,6 +27,6 @@ pipelineConfig:
         pipeline: release
         stage: build
         step:
-          name: pre-dummy-release
-          sh: echo pre dummy release
+          name: post-dummy-release
+          sh: echo post dummy release
         type: after
