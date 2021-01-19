@@ -3,10 +3,10 @@ pipelineConfig:
   agent:
     label: gcr.io/jenkinsxio/builder-go
   env:
-   - name: JENKINS_X
-     value: jx
-   - name: MY_VAR
-     value: foo
+    - name: JENKINS_X
+      value: jx
+    - name: MY_VAR
+      value: foo
   pipelines:
     release:
       setup:
@@ -23,11 +23,10 @@ pipelineConfig:
           name: pre-dummy-release
           sh: echo pre dummy release
         type: before
-    overrides:
-          - name: dummy-release
-            pipeline: release
-            stage: build
-            step:
-              name: pre-dummy-release
-              sh: echo pre dummy release
-            type: after
+      - name: dummy-release
+        pipeline: release
+        stage: build
+        step:
+          name: pre-dummy-release
+          sh: echo pre dummy release
+        type: after
