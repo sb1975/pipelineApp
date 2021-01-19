@@ -1,0 +1,33 @@
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1611030999.5457215,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-sb1975-pipelineapp-master-relea-4kq6m-947tc[0m
+{"level":"info","ts":1611031007.156126,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/******/pipelineApp.git @ v0.0.2 in path /workspace/source"}
+{"level":"warn","ts":1611031007.156239,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1611031007.2020054,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:c04c6e02d12a8afa7b892f64fcde780d325cf4b4
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /tekton/home/git/credentials
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-download-dependencies[0m
+downloading dependencies for **
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-set-permissions[0m
+running chmod command
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-pre-dummy-release[0m
+pre dummy release
+
+Showing logs for build [32msb1975-pipelineapp-master-relea-4kq6m-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-dummy-release[0m
+Release
